@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="mt-5 container w-50">
+        <form class="btn btn-success container p-4 mt-4" style="width: 600px; height: 400px; border-radius: 50px;"  action="">
+            <h1 class="text-center  container">Product Details</h1>
+            <div class="mt-2 p-2">
+                <input type="text" class="control-form" id="a1" placeholder="product name" style="width: 492px;border-radius:8px"><br><br>
+                <input type="text" class="control-form" id="b1" placeholder="product id"style="width: 492px;border-radius:8px"><br><br>
+                <input type="text" class="control-form" id="c1" placeholder="product price"style="width: 492px;border-radius:8px"><br><br>
+                <input type="text" class="control-form" id="d1" placeholder="quantity"style="width: 492px;border-radius:8px"><br><br>
+            </div>
+            <button onclick="addProduct()" class="btn btn-danger mt-4" type="button" >add product</button>
+            <!-- form tag change submit to button in type -->
+        </form>
+        </div>
+        <div class="container text-center bg-success mt-4 p-4" style="width: 576px;height: 150px;border-radius: 28px; margin-left: 454px;">
+            <button type="button" onclick="document.location='product.html'" class="btn btn-danger mt-3 p-2">View product details</button>
+          </div>
+        
+</body>
+<script src="./pro.js"></script>
+</html>
