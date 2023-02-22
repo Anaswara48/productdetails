@@ -8,13 +8,18 @@ function login()
  function addProduct()
 {
     product={proname:a1.value,proid:b1.value,proprice:c1.value,quantity:d1.value}
-    if(product.proid in localStorage)
+    if(product.proid in localStorage){
     
         alert("product already exist")
-
+windows.location="home.html"
+}
+else{
     
-     localStorage.setItem(product.proid,JSON.stringify(product))
- }
+ localStorage.setItem(product.proid,JSON.stringify(product))
+ alert("new product added")
+windows.location="home.html"
+}
+}
 function displayProduct()
 {
     productid=searchid.value
